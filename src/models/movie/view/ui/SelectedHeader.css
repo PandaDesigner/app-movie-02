@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+.movie-selection {
+    @apply flex justify-end items-center mb-6 md:w-2/3 gap-4 sm:w-full max-w-[90%] mx-auto;
+}
+
+.movie-selection__count {
+    @apply text-sm font-medium text-gray-700;
+}
+
+.movie-selection__toggle {
+    @apply flex space-x-2 bg-white p-1 rounded-lg shadow-sm border border-gray-200;
+}
+
+.movie-selection__toggle-button {
+    @apply p-2 rounded-md;
+}
+
+.movie-selection__toggle-button--active {
+    @apply bg-blue-100 text-blue-600;
+}
+
+.movie-selection__toggle-button--inactive {
+    @apply text-gray-500 hover:bg-gray-100;
+}
+
+.movie-selection__toggle-icon {
+    @apply h-5 w-5;
+}
+º

@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+.card-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center md:w-2/3 sm:w-full max-w-[90%] mb-8 h-[90%] overflow-auto;
+}
+
+.card-grid__card {
+  @apply bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col w-full min-w-[80px] h-106 max-w-full overflow-hidden;
+}
+
+.card-grid__card-image-container {
+  @apply relative flex-grow;
+}
+
+.card-grid__card-image {
+  @apply w-full h-82 object-cover aspect-auto;
+}
+
+.card-grid__rating-badge {
+  @apply absolute top-1 right-1 bg-black/70 text-white px-1 py-0.5 rounded flex items-center;
+}
+
+.card-grid__rating-icon {
+  @apply h-3 w-3 text-yellow-400 mr-0.5;
+}
+
+.card-grid__rating-text {
+  @apply text-xs font-medium;
+}
+
+.card-grid__card-content {
+  @apply p-2 flex-grow flex flex-col;
+}
+
+.card-grid__card-title {
+  @apply text-xs font-medium text-gray-900 truncate;
+}
+
+.card-grid__card-year {
+  @apply text-xs text-gray-500 mt-0.5;
+}
+
+.card-grid__card-director {
+  @apply text-xs text-gray-600 mt-0.5 truncate;
+}

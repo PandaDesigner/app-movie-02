@@ -1,0 +1,64 @@
+@import 'tailwindcss';
+
+.table-container {
+  @apply bg-white shadow-md rounded-lg overflow-x-hidden md:w-2/3 sm:w-full max-w-[90%] mx-auto my-4 h-full;
+}
+
+.table {
+  @apply min-w-full divide-y divide-gray-200;
+}
+
+.table__header {
+  @apply bg-gray-50;
+}
+
+.table__header-cell {
+  @apply px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider table-fixed;
+}
+
+.table__body {
+  @apply bg-white divide-y divide-gray-200;
+}
+
+.table__row {
+  @apply hover:bg-gray-50;
+}
+
+.table__cell {
+  @apply px-6 py-4 whitespace-nowrap;
+}
+
+.table__cell-content {
+  @apply flex items-center;
+}
+
+.table__cell-icon {
+  @apply flex-shrink-0 h-10 w-10;
+}
+
+.table__icon-placeholder {
+  @apply h-10 w-10 text-gray-400;
+}
+
+.table__cell-text {
+  @apply ml-4;
+}
+
+.table__movie-title {
+  @apply text-sm font-medium text-gray-900;
+}
+
+.table__text {
+  @apply text-sm text-gray-500;
+}
+
+.table__rating {
+  @apply flex items-center;
+}
+
+.table__rating-icon {
+  @apply h-4 w-4 text-yellow-400 mr-1;
+}
+.table__cell-icon-image {
+  @apply w-10 h-10 object-cover rounded-sm aspect-square;
+}

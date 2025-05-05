@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+.header-movie {
+    @apply bg-white shadow-md rounded-md px-8 py-4 my-4 md:max-w-2/3 md:w-2/3 sm:w-full flex items-center justify-between;
+}
+
+.header-movie-container {
+    @apply flex-auto mx-auto py-6 px-4 sm:px-6 lg:px-8
+}
+
+.header-movie-container-text {
+    @apply text-5xl font-bold text-indigo-500 mb-6
+}
+
+.header-movie-container-base {
+    @apply flex flex-col items-center
+}
+
+.header-movie-input-container {
+    @apply w-full relative
+}
+
+.header-movie-input-container-icon {
+    @apply absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none
+}
+.header-movie-input-icon {
+    @apply h-5 w-5 text-gray-400
+}
+
+.header-movie-input {
+    @apply block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent
+}
